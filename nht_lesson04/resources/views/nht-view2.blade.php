@@ -7,25 +7,25 @@
 </head>
 <body>
 <h1>#If Statements</h1>
-        <hr>
-            @verbatim
-                <pre>
+    <hr>
+        @verbatim
+        <pre>
             @if (count($arr) === 1)
                 I have one element!
             @elseif (count($arr) > 1)
-                    I have multiple element!
+                I have multiple element!
             @else
-            I don't have any element!
+                I don't have any element!
             @endif
         </pre>
     @endverbatim
-    <h2>Mảng @{{$arr}} :</h2>
+<h2>Mảng @{{$arr}} :</h2>
     @if (count($arr) === 1)
             I have one element!
         @elseif (count($arr) > 1)
             I have multiple element!
         @else
             I don't have any element!
-        @endif
+    @endif
 </body>
 </html>

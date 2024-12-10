@@ -16,6 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/login', function (request $request) {
-    return $request->path();
-});
+route::get('nhtSecssionController/get',[nhtSecssionController::class,'getSecssionController'])->name('nhtSecssionController.get');
+route::get('nhtSecssionController/set',[nhtSecssionController::class,'setSecssionController'])->name('nhtSecssionController.set');
+route::get('nhtSecssionController/delete',[nhtSecssionController::class,'deleteSecssionController'])->name('nhtSecssionController.delete');

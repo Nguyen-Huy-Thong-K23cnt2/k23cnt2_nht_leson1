@@ -18,6 +18,6 @@ Route::get('/', function () {
 });
 
 //test seesson
-route::get('nhtSecssionController/get',[nhtSecssionController::class,'getSecssionController'])->name('nhtSecssionController.get');
-route::get('nhtSecssionController/set',[nhtSecssionController::class,'setSecssionController'])->name('nhtSecssionController.set');
-route::get('nhtSecssionController/delete',[nhtSecssionController::class,'deleteSecssionController'])->name('nhtSecssionController.delete');
+route::get('nhtSecssion/get',[nhtSecssionController::class,'nhtstoreSessionData'])->name('nhtSecssion.get');
+route::get('nhtSecssion/set',[nhtSecssionController::class,'nhtstoreSessionData'])->name('nhtSecssion.set');
+route::get('nhtSecssion/del',[nhtSecssionController::class,'nhtdeleteSessionData'])->name('nhtSecssion.del');

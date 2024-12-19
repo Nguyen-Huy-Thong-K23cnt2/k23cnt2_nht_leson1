@@ -20,7 +20,9 @@ class DatabaseSeeder extends Seeder
         // ]);
 
         $this->call([
-            NHT_QUAN_TRItableSeeder::class,
+            NHT_QUAN_TRITableSeeder::class,
+            NHT_LOAI_SAN_PHAMTableSeeder::class,
+            NHT_SAN_PHAMTableSeeder::class,
         ]);
     }
 }

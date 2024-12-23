@@ -17,4 +17,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('admins/nht-login',[NHT_QUAN_TRIController::class,'nhtlogin'])->name('admins.nhtlogin');
-Route::post('/admins/nht-login',[NHT_QUAN_TRIController::class,'nhtloginSubmit'])->name('admins.nhtloginSubmit'); 
+Route::post('/admins/nht-login',[NHT_QUAN_TRIController::class,'nhtloginSubmit'])->name('admins.nhtloginSubmit');
+
+# Admin Routes
+Route::get('/nht-admins', function() {
+    return view('nhtAdmins.index');
+});

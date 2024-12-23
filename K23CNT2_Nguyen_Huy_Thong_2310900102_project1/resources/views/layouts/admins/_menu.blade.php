@@ -4,8 +4,13 @@
     <a href="#"> Danh sách quản trị</a>
     </li>
     <li class="list-group-item">
-      <a href="nhtAdmins/nhtLoaiSanPham">
-        Loại sản phẩm
+      <a href="nht-admins/nht-loai-san-pham">
+      <style>
+        .mycolor {
+       color: black;
+        }
+      </style>
+        <p class="mycolor">Loại sản phẩm </p>
       </a>
     </li>
     <li class="list-group-item">A fourth item</li>

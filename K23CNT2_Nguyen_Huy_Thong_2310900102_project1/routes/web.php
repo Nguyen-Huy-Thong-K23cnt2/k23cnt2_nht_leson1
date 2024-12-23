@@ -1,4 +1,5 @@
 <?php
+use App\Http\Controllers\NHT_LOAI_SAN_PHAMcontroller;
 use App\Http\Controllers\NHT_QUAN_TRIController;
 use Illuminate\Support\Facades\Route;
 
@@ -23,3 +24,5 @@ Route::post('/admins/nht-login',[NHT_QUAN_TRIController::class,'nhtloginSubmit']
 Route::get('/nht-admins', function() {
     return view('nhtAdmins.index');
 });
+
+Route::get('/nht-admins/nht-loai-san-pham',[NHT_LOAI_SAN_PHAMcontroller::class,'nhtList'])->name('nhtadmins.nhtloaisanpham');

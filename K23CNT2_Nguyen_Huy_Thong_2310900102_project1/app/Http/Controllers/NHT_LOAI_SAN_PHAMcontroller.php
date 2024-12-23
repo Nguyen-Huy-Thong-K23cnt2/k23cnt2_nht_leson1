@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\nhtLoaiSanPham;
+use App\Models\NHT_LOAI_SAN_PHAM;
 use Illuminate\Http\Request;
 
 class NHT_LOAI_SAN_PHAMcontroller extends Controller
@@ -12,8 +12,8 @@ class NHT_LOAI_SAN_PHAMcontroller extends Controller
     // List
     public function nhtList()
     {
-        $nhtLoaiSanPham =NHT_LOAI_SAN_PHAM::all();
-        return view('admins.nhtLoaiSanPham.List', ['nhtLoaiSanPham' => $nhtLoaiSanPham]);
+        $nhtLoaiSanPhams =nht_loai_san_pham::all();
+        return view('nhtAdmins.nhtLoaiSanPham.List', ['nhtLoaiSanPham' => $nhtLoaiSanPhams]);
     }
 
 }

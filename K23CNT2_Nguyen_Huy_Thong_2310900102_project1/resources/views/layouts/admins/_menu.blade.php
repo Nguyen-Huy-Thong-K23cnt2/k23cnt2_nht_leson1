@@ -4,7 +4,7 @@
     <a href="#"> Danh sách quản trị</a>
     </li>
     <li class="list-group-item">
-      <a href="nht-admins/nht-loai-san-pham">
+      <a href="/nht-admins/nht-loai-san-pham">
       <style>
         .mycolor {
        color: black;

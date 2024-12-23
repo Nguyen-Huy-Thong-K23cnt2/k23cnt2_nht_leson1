@@ -5,8 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class NHT_LOAI_SAN_PHAM extends Model
+class nht_loai_san_pham extends Model
 {
     use HasFactory;
-    protected $table="NHT_LOAI_SAN_PHAM";
+    protected $table="nht_loai_san_pham";
 }

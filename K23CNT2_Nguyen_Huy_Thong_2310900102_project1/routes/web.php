@@ -25,4 +25,9 @@ Route::get('/nht-admins', function() {
     return view('nhtAdmins.index');
 });
 
+//xem loại sản phẩm
 Route::get('/nht-admins/nht-loai-san-pham',[NHT_LOAI_SAN_PHAMcontroller::class,'nhtList'])->name('nhtadmins.nhtloaisanpham');
+
+//thêm
+Route::get('/nht-admins/nht-loai-san-pham/nht-create',[NHT_LOAI_SAN_PHAMcontroller::class,'nhtCreate'])->name('nhtadmins.nhtloaisanpham.nhtcreate');
+Route::post('/nht-admins/nht-loai-san-pham/nht-create',[NHT_LOAI_SAN_PHAMcontroller::class,'nhtCreateSubmit'])->name('nhtadmins.nhtloaisanpham.nhtcreatesubmit');

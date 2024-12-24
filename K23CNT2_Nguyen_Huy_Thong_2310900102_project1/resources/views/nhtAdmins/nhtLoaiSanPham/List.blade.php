@@ -28,7 +28,9 @@
                         <td>{{$item->nhtTenLoai}}</td>
                         <td>{{$item->nhtTrangThai}}</td>
                         <td>
-                            view/edit/delete
+                            view/
+                            <a href="/nht-admins/nht-loai-san-pham/nht-edit/{{$item->id}}">Edit</a>
+                        /delete
                         </td>
                     </tr>
                     @empty

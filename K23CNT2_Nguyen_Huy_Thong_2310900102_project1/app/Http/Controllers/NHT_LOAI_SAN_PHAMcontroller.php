@@ -12,7 +12,7 @@ class NHT_LOAI_SAN_PHAMcontroller extends Controller
     // List
     public function nhtList()
     {
-        $nhtLoaiSanPhams =nht_loai_san_pham::all();
+        $nhtLoaiSanPhams = nht_loai_san_pham::all();
         return view('nhtAdmins.nhtLoaiSanPham.List', ['nhtLoaiSanPham' => $nhtLoaiSanPhams]);
     }
 
@@ -35,6 +35,13 @@ class NHT_LOAI_SAN_PHAMcontroller extends Controller
         $nhtLoaiSanPham->save();
 
         return redirect()->route('nhtadmins.nhtloaisanpham');
+    }
+
+    //edit
+    public function nhtEdit($id)
+    {
+        $nhtLoaiSanPham = nht_loai_san_pham::find($id);
+        return view('nhtAdmins.nhtLoaiSanPham.Edit',['nhtLoaiSanPham'=>$nhtLoaiSanPham]);
     }
 
 }

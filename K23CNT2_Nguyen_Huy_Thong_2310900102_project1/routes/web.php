@@ -26,8 +26,15 @@ Route::get('/nht-admins', function() {
 });
 
 //xem loại sản phẩm
-Route::get('/nht-admins/nht-loai-san-pham',[NHT_LOAI_SAN_PHAMcontroller::class,'nhtList'])->name('nhtadmins.nhtloaisanpham');
+Route::get('/nht-admins/nht-loai-san-pham',[NHT_LOAI_SAN_PHAMcontroller::class,'nhtList'])
+->name('nhtadmins.nhtloaisanpham');
 
 //thêm
-Route::get('/nht-admins/nht-loai-san-pham/nht-create',[NHT_LOAI_SAN_PHAMcontroller::class,'nhtCreate'])->name('nhtadmins.nhtloaisanpham.nhtcreate');
-Route::post('/nht-admins/nht-loai-san-pham/nht-create',[NHT_LOAI_SAN_PHAMcontroller::class,'nhtCreateSubmit'])->name('nhtadmins.nhtloaisanpham.nhtcreatesubmit');
+Route::get('/nht-admins/nht-loai-san-pham/nht-create',[NHT_LOAI_SAN_PHAMcontroller::class,'nhtCreate'])
+->name('nhtadmins.nhtloaisanpham.nhtcreate');
+Route::post('/nht-admins/nht-loai-san-pham/nht-create',[NHT_LOAI_SAN_PHAMcontroller::class,'nhtCreateSubmit'])
+->name('nhtadmins.nhtloaisanpham.nhtcreatesubmit');
+
+//edit
+Route::get('/nht-admins/nht-loai-san-pham/nht-edit/{id}',[NHT_LOAI_SAN_PHAMcontroller::class,'nhtEdit'])
+->name('nhtadmins.nhtloaisanpham.nhtedit');

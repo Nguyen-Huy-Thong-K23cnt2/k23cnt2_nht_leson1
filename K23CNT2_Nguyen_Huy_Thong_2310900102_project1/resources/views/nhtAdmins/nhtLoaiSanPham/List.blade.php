@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-12">    
                 <h1>Danh sách loại sản phẩm</h1>
-                    <a href="{{route('nhtadmins.nhtloaisanpham.nhtcreate')}}" class="btn btn-success">Thêm mới</a>
+                    <a href="{{route('nhtadmins.nhtloaisanpham.nhtcreate')}}" type="button" class="btn btn-outline-primary">Thêm mới</a>
                 </div>
         </div>
         <div class="row mt-3">
@@ -28,9 +28,16 @@
                         <td>{{$item->nhtTenLoai}}</td>
                         <td>{{$item->nhtTrangThai}}</td>
                         <td>
-                            view/
-                            <a href="/nht-admins/nht-loai-san-pham/nht-edit/{{$item->id}}">Edit</a>
-                        /delete
+                            
+                            <a href="/nht-admins/nht-loai-san-pham/nht-view/{{$item->id}}"type="button" class="btn btn-outline-primary">
+                            Xem</a>
+
+                            <a href="/nht-admins/nht-loai-san-pham/nht-edit/{{$item->id}}" type="button" class="btn btn-outline-success">
+                            Sửa</a>
+                        
+                            <a href="/nht-admins/nht-loai-san-pham/nht-delete/{{$item->id}}"type="button" class="btn btn-outline-danger"
+                            onclick="return confirm('Bạn có chắc muốn xóa không ?')">
+                            Xóa</a>
                         </td>
                     </tr>
                     @empty

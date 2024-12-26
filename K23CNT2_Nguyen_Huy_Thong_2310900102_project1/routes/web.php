@@ -29,12 +29,22 @@ Route::get('/nht-admins', function() {
 Route::get('/nht-admins/nht-loai-san-pham',[NHT_LOAI_SAN_PHAMcontroller::class,'nhtList'])
 ->name('nhtadmins.nhtloaisanpham');
 
-//thêm
+//thêm loại sản phẩm
 Route::get('/nht-admins/nht-loai-san-pham/nht-create',[NHT_LOAI_SAN_PHAMcontroller::class,'nhtCreate'])
 ->name('nhtadmins.nhtloaisanpham.nhtcreate');
 Route::post('/nht-admins/nht-loai-san-pham/nht-create',[NHT_LOAI_SAN_PHAMcontroller::class,'nhtCreateSubmit'])
 ->name('nhtadmins.nhtloaisanpham.nhtcreatesubmit');
 
-//edit
+//edit loại sản phẩm
 Route::get('/nht-admins/nht-loai-san-pham/nht-edit/{id}',[NHT_LOAI_SAN_PHAMcontroller::class,'nhtEdit'])
 ->name('nhtadmins.nhtloaisanpham.nhtedit');
+Route::post('/nht-admins/nht-loai-san-pham/nht-edit',[NHT_LOAI_SAN_PHAMcontroller::class,'nhtEditSubmit'])
+->name('nhtadmins.nhtloaisanpham.nhteditsubmit');
+
+//view
+Route::get('/nht-admins/nht-loai-san-pham/nht-view/{id}',[NHT_LOAI_SAN_PHAMcontroller::class,'nhtView'])
+->name('nhtadmins.nhtloaisanpham.nhtview');
+
+// delete loại sản phẩm
+Route::get('/nht-admins/nht-loai-san-pham/nht-delete/{id}',[NHT_LOAI_SAN_PHAMController::class,'nhtDelete'])
+->name('nhtadmins.nhtloaisanpham.nhtdelete');

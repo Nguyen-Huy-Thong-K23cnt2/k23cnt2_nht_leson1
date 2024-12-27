@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\NHT_SAN_PHAM; 
 use App\Models\NHT_LOAI_SAN_PHAM; // Sử dụng Model User để thao tác với cơ sở dữ liệu
 use Illuminate\Support\Facades\Storage;  // Use this for file handling
-class nht_SAN_PHAMController extends Controller
+class NHT_SAN_PHAMController extends Controller
 {
     //
 
@@ -15,14 +15,14 @@ class nht_SAN_PHAMController extends Controller
     // list -----------------------------------------------------------------------------------------------------------------------------------------
     public function nhtList()
     {
-        $nhtsanphams = nht_SAN_PHAM::where('nhtTrangThai',0)->get();
+        $nhtsanphams = NHT_SAN_PHAM::where('nhtTrangThai',0)->get();
         return view('nhtAdmins.nhtsanpham.nht-list',['nhtsanphams'=>$nhtsanphams]);
     } 
     // detail -----------------------------------------------------------------------------------------------------------------------------------------
     public function nhtDetail($id)
     {
         // Tìm sản phẩm theo ID
-        $nhtsanpham = nht_SAN_PHAM::where('id', $id)->first();
+        $nhtsanpham = NHT_SAN_PHAM::where('id', $id)->first();
 
         // Trả về view và truyền thông tin sản phẩm
         return view('nhtAdmins.nhtsanpham.nht-detail', ['nhtsanpham' => $nhtsanpham]);
@@ -32,7 +32,7 @@ class nht_SAN_PHAMController extends Controller
       public function nhtCreate()
       {
             // đọc dữ liệu từ nht_LOAI_SAN_PHAM
-            $nhtloaisanpham = nht_LOAI_SAN_PHAM::all();
+            $nhtloaisanpham = NHT_LOAI_SAN_PHAM::all();
           return view('nhtAdmins.nhtsanpham.nht-create',['nhtloaisanpham'=>$nhtloaisanpham]);
       }
      
@@ -53,7 +53,7 @@ public function nhtCreateSubmit(Request $request)
     ]);
 
     // Khởi tạo đối tượng nht_SAN_PHAM và lưu thông tin vào cơ sở dữ liệu
-    $nhtsanpham = new nht_SAN_PHAM;
+    $nhtsanpham = new NHT_SAN_PHAM;
     $nhtsanpham->nhtMaSanPham = $request->nhtMaSanPham;
     $nhtsanpham->nhtTenSanPham = $request->nhtTenSanPham;
 

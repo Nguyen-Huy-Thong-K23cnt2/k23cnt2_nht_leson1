@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class nht_SAN_PHAM extends Model
+class NHT_SAN_PHAM extends Model
 {
     use HasFactory;
 

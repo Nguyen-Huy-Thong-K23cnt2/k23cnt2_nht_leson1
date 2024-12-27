@@ -55,5 +55,19 @@ Route::get('/nht-admins/nht-loai-san-pham/nht-view/{id}',[NHT_LOAI_SAN_PHAMcontr
 Route::get('/nht-admins/nht-loai-san-pham/nht-delete/{id}',[NHT_LOAI_SAN_PHAMController::class,'nhtDelete'])
 ->name('nhtadmins.nhtloaisanpham.nhtdelete');
 
+//sản phẩm
+//xem 
+Route::get('/nht-admins/nht-san-pham',[NHT_SAN_PHAMController::class,'nhtList'])
+->name('nhtadims.nhtsanpham');
+//thêm loại sản phẩm
+Route::get('/nht-admins/nht-san-pham/nht-create',[NHT_SAN_PHAMController::class,'nhtCreate'])
+->name('nhtadmins.nhtsanpham.nhtcreate');
+Route::post('/nht-admins/nht-san-pham/nht-create',[NHT_SAN_PHAMController::class,'nhtCreateSubmit'])
+->name('nhtadmins.nhtsanpham.nhtCreateSubmit');
+
+//detail
+Route::get('/nht-admins/nht-san-pham/nht-detail/{id}', [NHT_SAN_PHAMController::class, 'nhtDetail'])
+->name('nhtadmins.nhtsanpham.nhtDetail');
+
 
 

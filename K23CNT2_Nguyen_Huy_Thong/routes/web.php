@@ -1,6 +1,12 @@
 <?php
 use App\Http\Controllers\NHT_LOAI_SAN_PHAMcontroller;
 use App\Http\Controllers\NHT_QUAN_TRIController;
+use App\Http\Controllers\NHT_SAN_PHAMController;
+use App\Http\Controllers\NHT_KHACH_HANGcontroller;
+use App\Http\Controllers\NHT_DANH_SACH_QUAN_TRIController;
+use App\Http\Controllers\NHT_HOA_DONController;
+use App\Http\Controllers\NHT_CT_HOA_DONController;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -48,3 +54,6 @@ Route::get('/nht-admins/nht-loai-san-pham/nht-view/{id}',[NHT_LOAI_SAN_PHAMcontr
 // delete loại sản phẩm
 Route::get('/nht-admins/nht-loai-san-pham/nht-delete/{id}',[NHT_LOAI_SAN_PHAMController::class,'nhtDelete'])
 ->name('nhtadmins.nhtloaisanpham.nhtdelete');
+
+
+

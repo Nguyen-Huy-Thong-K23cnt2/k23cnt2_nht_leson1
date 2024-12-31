@@ -56,7 +56,6 @@ Route::get('/nht-admins/nht-loai-san-pham/nht-delete/{id}',[NHT_LOAI_SAN_PHAMCon
 ->name('nhtadmins.nhtloaisanpham.nhtdelete');
 
 //sản phẩm
-//xem 
 Route::get('/nht-admins/nht-san-pham',[NHT_SAN_PHAMController::class,'nhtList'])
 ->name('nhtadims.nhtsanpham');
 //thêm loại sản phẩm
@@ -65,9 +64,17 @@ Route::get('/nht-admins/nht-san-pham/nht-create',[NHT_SAN_PHAMController::class,
 Route::post('/nht-admins/nht-san-pham/nht-create',[NHT_SAN_PHAMController::class,'nhtCreateSubmit'])
 ->name('nhtadmins.nhtsanpham.nhtCreateSubmit');
 
-//detail
+//xem sản phẩm
 Route::get('/nht-admins/nht-san-pham/nht-detail/{id}', [NHT_SAN_PHAMController::class, 'nhtDetail'])
 ->name('nhtadmins.nhtsanpham.nhtDetail');
-
+// edit
+Route::get('/nht-admins/nht-san-pham/nht-edit/{id}', [NHT_SAN_PHAMController::class, 'nhtEdit'])
+->name('nhtadmins.nhtsanpham.nhtEdit');
+// Xử lý cập nhật sản phẩm
+Route::post('/nht-admins/nht-san-pham/nht-edit/{id}', [NHT_SAN_PHAMController::class, 'nhtEditSubmit'])
+->name('nhtadmins.nhtsanpham.nhtEditSubmit');
+// Đảm bảo sử dụng phương thức POST để gọi route xóa sản phẩm
+Route::get('/nht-admins/nht-san-pham/nht-delete/{id}', [NHT_SAN_PHAMController::class, 'nhtdelete'])
+->name('nhtadmins.nhtsanpham.nhtdelete');
 
 

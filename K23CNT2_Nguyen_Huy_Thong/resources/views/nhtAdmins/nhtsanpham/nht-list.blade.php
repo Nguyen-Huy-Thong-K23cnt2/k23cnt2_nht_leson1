@@ -59,6 +59,15 @@
                                     <a href="{{ route('nhtadmins.nhtsanpham.nhtDetail', $item->id) }}" class="btn btn-success btn-sm" title="Xem">xem
                                         <i class="fa-solid fa-eye"></i>
                                     </a>
+                                    <!-- Chỉnh sửa -->
+                            <a href="{{ route('nhtadmins.nhtsanpham.nhtEdit', $item->id) }}" class="btn btn-primary btn-sm" title="Chỉnh sửa">Sửa
+                                <i class="fa-solid fa-pen"></i>
+                            </a>
+                            <!-- Xóa -->
+                            <a href="{{ route('nhtadmins.nhtsanpham.nhtdelete', $item->id) }}" class="btn btn-danger btn-sm" 
+                               onclick="return confirm('Bạn muốn xóa Mã sản phẩm này không? ID: {{ $item->id }}');" title="Xóa">Xóa
+                                <i class="fa-regular fa-trash-can"></i>
+                            </a>
                                     
                                   
                                 </div>

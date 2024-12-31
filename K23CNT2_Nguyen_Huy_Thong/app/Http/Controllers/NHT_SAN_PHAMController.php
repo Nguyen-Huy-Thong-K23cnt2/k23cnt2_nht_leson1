@@ -92,7 +92,7 @@ public function nhtCreateSubmit(Request $request)
 
 public function nhtdelete($id)
 {
-    nht_SAN_PHAM::where('id',$id)->delete();
+    NHT_SAN_PHAM::where('id',$id)->delete();
 return back()->with('sanpham_deleted','Đã xóa Sản Phẩm thành công!');
 }
 
@@ -100,10 +100,10 @@ return back()->with('sanpham_deleted','Đã xóa Sản Phẩm thành công!');
 public function nhtEdit($id)
     {
        // Tìm sản phẩm theo ID
-    $nhtsanpham = nht_SAN_PHAM::findOrFail($id);
+    $nhtsanpham = NHT_SAN_PHAM::findOrFail($id);
 
     // Lấy tất cả các loại sản phẩm từ bảng nht_LOAI_SAN_PHAM
-    $nhtloaisanpham = nht_LOAI_SAN_PHAM::all();
+    $nhtloaisanpham = NHT_LOAI_SAN_PHAM::all();
 
     // Trả về view với dữ liệu sản phẩm và loại sản phẩm
     return view('nhtAdmins.nhtsanpham.nht-edit', [
@@ -129,7 +129,7 @@ public function nhtEdit($id)
     ]);
 
     // Tìm sản phẩm cần chỉnh sửa
-    $nhtsanpham = nht_SAN_PHAM::findOrFail($id);
+    $nhtsanpham = NHT_SAN_PHAM::findOrFail($id);
 
     // Cập nhật thông tin sản phẩm
     $nhtsanpham->nhtMaSanPham = $request->nhtMaSanPham;

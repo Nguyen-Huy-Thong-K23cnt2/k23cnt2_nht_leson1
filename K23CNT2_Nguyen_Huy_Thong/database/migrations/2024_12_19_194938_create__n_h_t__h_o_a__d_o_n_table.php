@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('nhtEmail',255);
             $table->string('nhtDienThoai',255);
             $table->string('nhtDiaChi',255);
-            $table->float('nhtTongTriGia');
+            $table->float('nhtTongGiaTri');
             $table->tinyInteger('nhtTrangThai');
             $table->timestamps();
         });

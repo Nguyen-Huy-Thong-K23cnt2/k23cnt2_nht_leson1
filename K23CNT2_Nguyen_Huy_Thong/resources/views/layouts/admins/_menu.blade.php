@@ -21,4 +21,7 @@
     <li class="list-group-item">
         <a href="/nht-admins/nht-khach-hang" class="text-decoration-none text-dark">Khách Hàng</a>
     </li>
+    <li class="list-group-item">
+        <a href="/nht-admins/nht-hoa-don" class="text-decoration-none text-dark">Hóa Đơn</a>
+    </li>
   </ul>

@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\nht_KHACH_HANG; 
+use App\Models\NHT_KHACH_HANG; 
 class NHT_KHACH_HANGcontroller extends Controller
 {
     //

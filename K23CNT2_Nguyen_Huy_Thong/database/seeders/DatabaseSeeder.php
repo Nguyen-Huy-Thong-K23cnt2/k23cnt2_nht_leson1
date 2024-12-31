@@ -24,6 +24,7 @@ class DatabaseSeeder extends Seeder
             NHT_LOAI_SAN_PHAMTableSeeder::class,
             NHT_SAN_PHAMTableSeeder::class,
             NHT_KHACH_HANGTableSeeder::class,
+            NHT_HOA_DONTableSeeder::class,
         ]);
     }
 }

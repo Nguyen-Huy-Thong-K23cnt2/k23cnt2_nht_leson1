@@ -18,5 +18,7 @@
     <li class="list-group-item">
         <a href="/nht-admins/nht-san-pham" class="text-decoration-none text-dark">Sản Phẩm</a>
     </li>
-    <li class="list-group-item">And a fifth one</li>
+    <li class="list-group-item">
+        <a href="/nht-admins/nht-khach-hang" class="text-decoration-none text-dark">Khách Hàng</a>
+    </li>
   </ul>

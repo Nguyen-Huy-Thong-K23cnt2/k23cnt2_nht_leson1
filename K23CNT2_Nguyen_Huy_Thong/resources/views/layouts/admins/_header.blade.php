@@ -1,1 +1,1 @@
-<h1>Nội dung tiêu đề chức năng </h1>
+<h1>Trang Quản Trị</h1>

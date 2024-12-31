@@ -77,4 +77,47 @@ Route::post('/nht-admins/nht-san-pham/nht-edit/{id}', [NHT_SAN_PHAMController::c
 Route::get('/nht-admins/nht-san-pham/nht-delete/{id}', [NHT_SAN_PHAMController::class, 'nhtdelete'])
 ->name('nhtadmins.nhtsanpham.nhtdelete');
 
+// khach hang--------------------------------------------------------------------------------------------------------------------------------------
+// list
+Route::get('/nht-admins/nht-khach-hang',[nht_KHACH_HANGcontroller::class,'nhtList'])
+->name('nhtadmins.nhtkhachhang');
+//detail
+Route::get('/nht-admins/nht-khach-hang/nht-detail/{id}', [nht_KHACH_HANGcontroller::class, 'nhtDetail'])
+->name('nhtadmin.nhtkhachhang.nhtDetail');
+//create
+Route::get('/nht-admins/nht-khach-hang/nht-create',[nht_KHACH_HANGcontroller::class,'nhtCreate'])
+->name('nhtadmin.nhtkhachhang.nhtcreate');
+Route::post('/nht-admins/nht-khach-hang/nht-create',[nht_KHACH_HANGcontroller::class,'nhtCreateSubmit'])
+->name('nhtadmin.nhtkhachhang.nhtCreateSubmit');
+//edit
+Route::get('/nht-admins/nht-khach-hang/nht-edit/{id}', [nht_KHACH_HANGcontroller::class, 'nhtEdit'])
+->name('nhtadmin.nhtkhachhang.nhtedit');
+Route::post('/nht-admins/nht-khach-hang/nht-edit/{id}', [nht_KHACH_HANGcontroller::class, 'nhtEditSubmit'])
+->name('nhtadmin.nhtkhachhang.nhtEditSubmit');
+//delete
+// Đảm bảo sử dụng phương thức POST để gọi route xóa sản phẩm
+Route::get('/nht-admins/nht-khach-hang/nht-delete/{id}', [nht_KHACH_HANGcontroller::class, 'nhtDelete'])
+->name('nhtadmin.nhtkhachhang.nhtdelete');
+
+// Hóa Đơn--------------------------------------------------------------------------------------------------------------------------------------
+// list
+Route::get('/nht-admins/nht-hoa-don',[NHT_HOA_DONController::class,'nhtList'])
+->name('nhtadmins.nhthoadon');
+//detail
+Route::get('/nht-admins/nht-hoa-don/nht-detail/{id}', [NHT_HOA_DONController::class, 'nhtDetail'])
+->name('nhtadmin.nhthoadon.nhtDetail');
+//create
+Route::get('/nht-admins/nht-hoa-don/nht-create',[NHT_HOA_DONController::class,'nhtCreate'])
+->name('nhtadmin.nhthoadon.nhtcreate');
+Route::post('/nht-admins/nht-hoa-don/nht-create',[NHT_HOA_DONController::class,'nhtCreateSubmit'])
+->name('nhtadmin.nhthoadon.nhtCreateSubmit');
+//edit
+Route::get('/nht-admins/nht-hoa-don/nht-edit/{id}', [NHT_HOA_DONController::class, 'nhtEdit'])
+->name('nhtadmin.nhthoadon.nhtedit');
+Route::post('/nht-admins/nht-hoa-don/nht-edit/{id}', [NHT_HOA_DONController::class, 'nhtEditSubmit'])
+->name('nhtadmin.nhthoadon.nhtEditSubmit');
+//delete
+// Đảm bảo sử dụng phương thức POST để gọi route xóa sản phẩm
+Route::get('/nht-admins/nht-hoa-don/nht-delete/{id}', [NHT_HOA_DONController::class, 'nhtDelete'])
+->name('nhtadmin.nhthoadon.nhtdelete');
 

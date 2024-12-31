@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('nht_khach_hang', function (Blueprint $table) {
+        Schema::create('NHT_KHACH_HANG', function (Blueprint $table) {
             $table->id();
             $table->string('nhtMaKhachHang',255)->unique();
             $table->string('nhtHoTenKhachHang',255);
@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('nhtMatKhau',255);
             $table->string('nhtDienThoai',255);
             $table->string('nhtDiaChi',255);
-            $table->dateTime('nhtNgayDangKy');
+            $table->date('nhtNgayDangKy');
             $table->tinyInteger('nhtTrangThai');
             $table->timestamps();
         });
@@ -30,6 +30,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('nht_khach_hang');
+        Schema::dropIfExists('NHT_KHACH_HANG');
     }
 };

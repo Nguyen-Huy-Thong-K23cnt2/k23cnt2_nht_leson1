@@ -23,6 +23,7 @@ class DatabaseSeeder extends Seeder
             NHT_QUAN_TRITableSeeder::class,
             NHT_LOAI_SAN_PHAMTableSeeder::class,
             NHT_SAN_PHAMTableSeeder::class,
+            NHT_KHACH_HANGTableSeeder::class,
         ]);
     }
 }

@@ -5,21 +5,25 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash; // Thêm dòng này
 
 class NHT_QUAN_TRITableSeeder extends Seeder
 {
     public function run(): void
     {
-        $nhtMatKhau = md5("123456");
+         // Kiểm tra xem email đã tồn tại hay chưa
+    $exists = DB::table('NHT_QUANTRI')->where('nhtTaiKhoan', 'nht@gmail.com')->exists();
+    if (!$exists) {
         DB::table('NHT_QUANTRI')->insert([
-            'nhtTaiKhoan'=>"nht@gmail.com",
-            'nhtMatKhau'=>$nhtMatKhau,
-            'nhtTrangThai'=>0
+            'nhtTaiKhoan' => 'nht@gmail.com',
+            'nhtMatKhau' => Hash::make('123'), // Đảm bảo mật khẩu được mã hóa
+            'nhtTrangThai' => 0,
         ]);
         DB::table('NHT_QUANTRI')->insert([
             'nhtTaiKhoan'=>"1584889",
-            'nhtMatKhau'=>$nhtMatKhau,
+            'nhtMatKhau'=>Hash::make('123'), // Đảm bảo mật khẩu được mã hóa
             'nhtTrangThai'=>0
         ]);
+                 }
     }
 }

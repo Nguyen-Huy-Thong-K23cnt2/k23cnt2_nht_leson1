@@ -49,10 +49,10 @@
                             </div>
 
                            <div class="card-footer">
-                                <button class="btn btn-success">Ghi lại</button>
+                                <button class="btn btn-success">Thêm mới</button>
                                 <a href="{{route('nhtadmins.nhtloaisanpham')}}" class="btn btn-secondary">Quay Lại</a>
                            </div>
-                    </div>
+                    </div> 
                 </form>
             </div>
         </div>

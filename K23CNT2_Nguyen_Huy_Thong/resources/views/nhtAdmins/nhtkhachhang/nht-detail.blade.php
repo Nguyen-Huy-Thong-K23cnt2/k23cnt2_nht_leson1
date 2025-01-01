@@ -1,4 +1,3 @@
-
 @extends('layouts.admins._matster')
 @section('title','Xem THông Tin Khách Hàng')
     

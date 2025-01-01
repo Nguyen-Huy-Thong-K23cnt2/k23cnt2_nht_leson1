@@ -10,6 +10,14 @@
 
     <li class="list-group-item active" aria-current="true">
         <strong>Quản Trị Nội Dung</strong>
+
+
+    <li class="list-group-item">
+        <a href="/nht-admins/nhtdanhsachquantri/nhtdanhmuc" class="text-decoration-none text-dark">Danh Sách Quản Trị</a>
+    </li>
+    <li class="list-group-item">
+        <a href="/nht-admins/nht-quan-tri" class="text-decoration-none text-dark">Quản trị Viên</a>
+    </li>
     </li>
     <li class="list-group-item">
         <a href="/nht-admins/nht-loai-san-pham" class="text-decoration-none text-dark">Loại Sản Phẩm</a>
@@ -23,5 +31,11 @@
     </li>
     <li class="list-group-item">
         <a href="/nht-admins/nht-hoa-don" class="text-decoration-none text-dark">Hóa Đơn</a>
+    </li>
+    <li class="list-group-item">
+        <a href="/nht-admins/nht-ct-hoa-don" class="text-decoration-none text-dark">Chi Tiết Hóa Đơn</a>
+    </li>
+    <li class="list-group-item">
+        <a href="/nht-admins/nht-tin-tuc" class="text-decoration-none text-dark">Tin Tức</a>
     </li>
   </ul>

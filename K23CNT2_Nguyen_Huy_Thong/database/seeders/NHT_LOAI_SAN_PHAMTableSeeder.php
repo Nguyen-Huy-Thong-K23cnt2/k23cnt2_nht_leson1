@@ -15,22 +15,27 @@ class  NHT_LOAI_SAN_PHAMTableSeeder extends Seeder
     {
         DB::table('nht_loai_san_pham')->insert([
             'nhtMaLoai'=> "L001",
-            'nhtTenLoai'=>"Cây cảnh văn phòng",
+            'nhtTenLoai'=>"Hãng Xe Lexus",
             'nhtTrangThai'=>0
         ]);
         DB::table('nht_loai_san_pham')->insert([
             'nhtMaLoai'=> "L002",
-            'nhtTenLoai'=>"Cây để bàn",
+            'nhtTenLoai'=>"Hãng Rolls-Royce ",
             'nhtTrangThai'=>0
         ]);
         DB::table('nht_loai_san_pham')->insert([
             'nhtMaLoai'=> "L003",
-            'nhtTenLoai'=>"Cây cảnh phong thủy",
+            'nhtTenLoai'=>"Hãng Bentley",
             'nhtTrangThai'=>0
         ]);
         DB::table('nht_loai_san_pham')->insert([
             'nhtMaLoai'=> "L004",
-            'nhtTenLoai'=>"Cây thủy canh",
+            'nhtTenLoai'=>"Hãng xe BMW",
+            'nhtTrangThai'=>0
+        ]);
+        DB::table('nht_loai_san_pham')->insert([
+            'nhtMaLoai'=> "L005",
+            'nhtTenLoai'=>"Hãng Audi",
             'nhtTrangThai'=>0
         ]);
     }

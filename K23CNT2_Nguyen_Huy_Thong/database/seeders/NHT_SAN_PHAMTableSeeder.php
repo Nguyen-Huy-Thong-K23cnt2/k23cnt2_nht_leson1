@@ -14,27 +14,27 @@ class NHT_SAN_PHAMTableSeeder extends Seeder
     public function run(): void
     {
         DB::table("nht_san_pham")->insert([
-            'nhtMaSanPham'=> "VP001",
-            'nhtTenSanPham'=> "Cây phú quý",
-            'nhtHinhAnh'=>"images/san-pham/VP001.jpg",
+            'nhtMaSanPham'=> "SP001",
+            'nhtTenSanPham'=> "Lexus es 250",
+            'nhtHinhAnh'=>"img/san_pham/SP001.jpg",
             'nhtSoLuong'=>100,
             'nhtDonGia'=>699000,
             'nhtMaLoai'=>1,
             'nhtTrangThai'=>0
         ]);
         DB::table("nht_san_pham")->insert([
-            'nhtMaSanPham'=> "VP002",
-            'nhtTenSanPham'=> "Cây đại phú gia",
-            'nhtHinhAnh'=>"images/san-pham/VP002.jpg",
+            'nhtMaSanPham'=> "SP002",
+            'nhtTenSanPham'=> "Rolls-Royce Ghost",
+            'nhtHinhAnh'=>"img/san_pham/SP002.jpg",
             'nhtSoLuong'=>200,
             'nhtDonGia'=>550000,
             'nhtMaLoai'=>1,
             'nhtTrangThai'=>0
         ]);
         DB::table("nht_san_pham")->insert([
-            'nhtMaSanPham'=> "VP003",
-            'nhtTenSanPham'=> "Cây hạnh phúc",
-            'nhtHinhAnh'=>"images/san-pham/VP003.jpg",
+            'nhtMaSanPham'=> "SP003",
+            'nhtTenSanPham'=> "Continental GT",
+            'nhtHinhAnh'=>"img/san_pham/SP003.jpg",
             'nhtSoLuong'=>150,
             'nhtDonGia'=>250000,
             'nhtMaLoai'=>1,
@@ -42,19 +42,10 @@ class NHT_SAN_PHAMTableSeeder extends Seeder
         ]);
         DB::table("nht_san_pham")->insert([
             'nhtMaSanPham'=> "VP004",
-            'nhtTenSanPham'=> "Cây vạn lộc",
-            'nhtHinhAnh'=>"images/san-pham/VP004.jpg",
+            'nhtTenSanPham'=> "Audi Q5",
+            'nhtHinhAnh'=>"img/san_pham/SP003.jpg",
             'nhtSoLuong'=>300,
             'nhtDonGia'=>799000,
-            'nhtMaLoai'=>1,
-            'nhtTrangThai'=>0
-        ]);
-        DB::table("nht_san_pham")->insert([
-            'nhtMaSanPham'=> "PT001",
-            'nhtTenSanPham'=> "Cây thiết mộc lan",
-            'nhtHinhAnh'=>"images/san-pham/PT001.jpg",
-            'nhtSoLuong'=>150,
-            'nhtDonGia'=>590000,
             'nhtMaLoai'=>1,
             'nhtTrangThai'=>0
         ]);

@@ -8,7 +8,63 @@ use App\Models\NHT_LOAI_SAN_PHAM; // Sử dụng Model User để thao tác vớ
 use Illuminate\Support\Facades\Storage;  // Use this for file handling
 class NHT_SAN_PHAMController extends Controller
 {
-    //
+     // In your controller
+     public function search(Request $request)
+     {
+         // Lấy từ khóa tìm kiếm từ input của người dùng
+         $search = $request->input('search');
+     
+         // Nếu có từ khóa tìm kiếm, lọc sản phẩm theo tên
+         if ($search) {
+             // Sử dụng where để lọc các sản phẩm có tên giống hoặc chứa từ khóa tìm kiếm
+             $products = NHT_SAN_PHAM::where('nhtTenSanPham', 'like', '%' . $search . '%')->paginate(10);
+         } else {
+             // Nếu không có từ khóa tìm kiếm, hiển thị tất cả sản phẩm
+             $products = NHT_SAN_PHAM::paginate(10);
+         }
+     
+         // Trả về view với danh sách sản phẩm và từ khóa tìm kiếm   
+         return view('nhtuser.search', compact('products', 'search'));
+     }
+ 
+     public function search1(Request $request)
+     {
+         // Lấy từ khóa tìm kiếm từ input của người dùng
+         $search = $request->input('search');
+     
+         // Nếu có từ khóa tìm kiếm, lọc sản phẩm theo tên
+         if ($search) {
+             // Sử dụng where để lọc các sản phẩm có tên giống hoặc chứa từ khóa tìm kiếm
+             $products = NHT_SAN_PHAM::where('nhtTenSanPham', 'like', '%' . $search . '%')->paginate(10);
+         } else {
+             // Nếu không có từ khóa tìm kiếm, hiển thị tất cả sản phẩm
+             $products = NHT_SAN_PHAM::paginate(10);
+         }
+     
+         // Trả về view với danh sách sản phẩm và từ khóa tìm kiếm   
+         return view('nhtuser.search1', compact('products', 'search'));
+     }
+ 
+ 
+     // search sap pham admin
+     public function searchAdmins(Request $request)
+     {
+         // Lấy từ khóa tìm kiếm từ input của người dùng
+         $search = $request->input('search');
+     
+         // Nếu có từ khóa tìm kiếm, lọc sản phẩm theo tên
+         if ($search) {
+             // Sử dụng where để lọc các sản phẩm có tên giống hoặc chứa từ khóa tìm kiếm
+             $products = NHT_SAN_PHAM::where('nhtTenSanPham', 'like', '%' . $search . '%')->paginate(10);
+         } else {
+             // Nếu không có từ khóa tìm kiếm, hiển thị tất cả sản phẩm
+             $products = NHT_SAN_PHAM::paginate(10);
+         }
+     
+         // Trả về view với danh sách sản phẩm và từ khóa tìm kiếm   
+         return view('nhtAdmins.nhtsanpham.nht-search', compact('products', 'search'));
+     }
+ 
 
 
      //admin CRUD

@@ -40,7 +40,7 @@ Route::get('/nht-admins/nhtdanhsachquantri/nhtdanhmuc', [NHT_DANH_SACH_QUAN_TRIC
 ->name('nhtAdmins.nhtdanhsachquantri.danhmuc');
 #admins - tin tức --------------------------------------------------------------------------------------------------------------------------------------
 Route::get('/nht-admins/nhtdanhsachquantri/nhttintuc', [NHT_DANH_SACH_QUAN_TRIController::class, 'tintuc'])
-->name('nhtAdmins.nhtdanhsachquantri..danhmuc.tintuc');
+->name('nhtAdmins.nhtdanhsachquantri..danhmuc.tintuc'); 
 // Sản phẩm--------------------------------------------------------------------------------------------------------------------------------------
 Route::get('/nht-admins/nhtdanhsachquantri/nhtsanpham', [NHT_DANH_SACH_QUAN_TRIController::class, 'sanpham'])
 ->name('nhtAdmins.nhtdanhsachquantri.danhmuc.sanpham');

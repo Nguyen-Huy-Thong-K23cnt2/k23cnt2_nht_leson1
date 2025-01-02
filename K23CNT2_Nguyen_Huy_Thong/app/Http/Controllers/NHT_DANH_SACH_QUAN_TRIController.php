@@ -36,7 +36,7 @@ class NHT_DANH_SACH_QUAN_TRIController extends Controller
         }
     
         return view('nhtAdmins.nhtdanhsachquantri.nhtdanhmuc.nhtnguoidung', ['nhtnguoidung' => $nhtnguoidung]);
-    }
+    } 
     
 
     public function tintuc()

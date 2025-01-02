@@ -71,18 +71,18 @@
             padding: 20px;
         }
     </style>
-</head>
+</head> 
 
 <body>
 
     <!-- Header Section -->
     <header>
-        @include('_layouts.frontend._headerTitle') <!-- Title for frontend when not logged in -->
+        @include('layouts.frontend._headerTitle') <!-- Title for frontend when not logged in -->
     </header>
     <hr style="border: 2px solid black">
 
     <!-- Navbar (Main Navigation Menu) -->
-    @include('_layouts.frontend._menu') <!-- Menu navigation (with toggle functionality) -->
+    @include('layouts.frontend._menu') <!-- Menu navigation (with toggle functionality) -->
     <hr style="border: 2px solid black">
 
     <!-- Main Content Section -->
@@ -90,7 +90,7 @@
         <div class="wrapper">
             <!-- Content body -->
             <section class="content-body">
-                @yield('content-body') <!-- Dynamic content for pages -->
+                @yield('content-body')<!-- Dynamic content for pages -->
             </section>
         </div>
     </div>

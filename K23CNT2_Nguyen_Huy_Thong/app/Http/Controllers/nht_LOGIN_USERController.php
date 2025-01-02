@@ -3,12 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\NHT_KHACH_HANG;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Hash;
-class NHT_LOGIN_USERContoller extends Controller
+
+class nht_LOGIN_USERController extends Controller
 {
-    // Show login form
+    /// Show login form
     public function nhtLogin()
     {
         return view('nhtuser.login');
@@ -24,7 +22,7 @@ class NHT_LOGIN_USERContoller extends Controller
     ]);
 
     // Tìm người dùng theo email
-    $user = nht_KHACH_HANG::where('nhtEmail', $request->nhtEmail)->first();
+    $user = NHT_KHACH_HANG::where('nhtEmail', $request->nhtEmail)->first();
 
     // Kiểm tra nếu người dùng tồn tại và mật khẩu đúng
     if ($user && Hash::check($request->nhtMatKhau, $user->nhtMatKhau)) {

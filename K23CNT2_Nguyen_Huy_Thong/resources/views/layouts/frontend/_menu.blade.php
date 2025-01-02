@@ -9,7 +9,7 @@
 <body>
     <nav class="bg-gradient-to-r from-blue-500 to-purple-500 p-4">
         <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-white text-2xl font-bold">Mua xe</h1>
+            <h1 class="text-white text-2xl font-bold">Mẫu xe</h1>
             <ul class="flex space-x-4 text-white">
                
                 <li class="nav-item">

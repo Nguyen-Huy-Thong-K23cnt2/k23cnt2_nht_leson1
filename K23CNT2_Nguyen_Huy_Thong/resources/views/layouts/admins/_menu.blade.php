@@ -21,7 +21,7 @@
     </li>
     <li class="list-group-item">
         <a href="/nht-admins/nht-loai-san-pham" class="text-decoration-none text-dark">Loại Sản Phẩm</a>
-    </li>
+    </li> 
 
     <li class="list-group-item">
         <a href="/nht-admins/nht-san-pham" class="text-decoration-none text-dark">Sản Phẩm</a>

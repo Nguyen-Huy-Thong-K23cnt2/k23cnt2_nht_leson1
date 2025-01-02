@@ -97,7 +97,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Tên Công Ty. All rights reserved.</p>
+        <p>&copy; Nguyễn Huy Thông K23CNT2</p>
     </footer>
 
     <!-- JavaScript Libraries -->

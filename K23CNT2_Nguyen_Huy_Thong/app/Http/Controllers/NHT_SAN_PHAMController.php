@@ -191,7 +191,7 @@ public function nhtEdit($id)
     $nhtsanpham->nhtMaSanPham = $request->nhtMaSanPham;
     $nhtsanpham->nhtTenSanPham = $request->nhtTenSanPham;
     $nhtsanpham->nhtSoLuong = $request->nhtSoLuong;
-    $nhtsanpham->nhtDonGia = $request->nhtDonGia;
+    $nhtsanpham->nhtDonGia = $request->nhtDonGia; 
     $nhtsanpham->nhtMaLoai = $request->nhtMaLoai;
     $nhtsanpham->nhtTrangThai = $request->nhtTrangThai;
 

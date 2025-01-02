@@ -3,9 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\NHT_KHACH_HANG;
-use Illuminate\Support\Facades\Hash;
-class NHT_SIGNUP_USERContoller extends Controller
+
+class nht_SIGNUPController extends Controller
 {
     // Show the form to create a new customer
     public function nhtsignup()

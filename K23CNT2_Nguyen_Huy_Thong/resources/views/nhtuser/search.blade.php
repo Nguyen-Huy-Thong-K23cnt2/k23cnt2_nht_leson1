@@ -18,6 +18,7 @@
                                 Xem Chi Tiết
                             </a>
                             
+                                </a>
                                 <button type="button" class="bg-yellow-500 text-white py-2 px-4 rounded-md text-sm hover:bg-yellow-600 transition duration-300 add-to-cart-btn" 
                                         data-id="{{ $sanpham->id }}" data-name="{{ $sanpham->nhtTenSanPham }}">
                                     <i class="fa fa-cart-plus"></i> Thêm vào giỏ

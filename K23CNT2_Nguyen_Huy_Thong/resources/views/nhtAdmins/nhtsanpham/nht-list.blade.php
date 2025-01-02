@@ -1,8 +1,8 @@
-
 @extends('layouts.admins._matster')
 @section('title', 'Danh Sách Sản Phẩm')
 
 @section('content-body')
+
     <div class="container border mt-4">
         <div class="row mb-4">
             <div class="col-12 d-flex justify-content-between align-items-center">
@@ -19,7 +19,7 @@
                     <tr>
                         <th>#</th>
                         <th>Mã sản phẩm</th>
-                        <th>Tên sản phẩm</th>
+                        <th>Tên sản phẩm</th> 
                         <th>Hình Ảnh</th>
                         <th>Số Lượng</th>
                         <th>Đơn Giá</th>
@@ -50,8 +50,8 @@
                                 @if($item->nhtTrangThai == 0)
                                     <span class="badge bg-success">Hiển Thị</span>
                                 @else
-                                    <span class="badge bg-danger">Khóa</span>
-                                @endif
+                                    <span class="badge bg-danger">Khóa</span> 
+                                @endif 
                             </td>
                             <td class="text-center">
                                 <div class="btn-group" role="group">
@@ -73,7 +73,7 @@
                                 </div>
                             </td>
                         </tr>
-                    @empty
+                    @empty 
                         <tr>
                             <td colspan="9" class="text-center text-muted">
                                 Chưa có thông tin sản phẩm

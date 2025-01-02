@@ -100,28 +100,26 @@
         <div class="logo">
             <a href="/nht-admins" class="text-white text-decoration-none">
                 <img 
-                    src="{{ asset('storage/img/san_pham/logo.png') }}" 
-                    alt="Logo"  
-                    class="img-fluid logo-img" 
-                    style="width: 200px; height: auto;" 
+                    src="{{ asset('storage/img/san_pham/logoH.png') }}"  
+                    style="width: 200px; height: 200px;" 
                 />
             </a>
         </div>
 
         <!-- Menu Navigation -->
         <!-- Search form -->
-        <form action="{{ route('nhtuser.search') }}" method="GET" class="search-form">
+        <form action="{{ route('nhtuser.searchAdmins') }}" method="GET" class="search-form">
             <div class="input-group">
                 <input 
                     class="form-control" 
-                    placeholder="Tìm Kiếm... !" 
+                    placeholder="Tìm Kiếm... " 
                     type="text" 
                     name="search"
                 />
                 <button 
                     type="submit" 
                     class="btn btn-danger"
-                >
+                > 
                     <i class="fas fa-search"></i>
                 </button>
             </div>

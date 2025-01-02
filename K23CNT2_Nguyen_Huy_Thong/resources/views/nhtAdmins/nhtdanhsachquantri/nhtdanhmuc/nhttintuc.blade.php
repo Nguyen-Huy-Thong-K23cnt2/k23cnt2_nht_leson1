@@ -6,32 +6,42 @@
     <div class="container mt-5">
         <h1 class="text-center mb-5">Danh Sách Tin Tức</h1>
 
-        <div class="row">
-            @foreach ($nhttintucs as $article)
-                <div class="col-md-4 mb-4 d-flex">
-                    <div class="card shadow-sm border-light rounded d-flex flex-column">
-                        <!-- Image Section: Make sure the image is responsive and has a rounded top corner -->
-                        <img src="{{ asset('storage/' . $article->nhtHinhAnh) }}" class="card-img-top rounded-top" alt="{{ $article->nhtTieuDe }}">
+        @if ($nhttintucs->isEmpty())
+            <p class="text-center text-muted">Không có tin tức nào để hiển thị.</p>
+        @else
+            <div class="row">
+                @foreach ($nhttintucs as $article)
+                    <div class="col-md-4 mb-4 d-flex">
+                        <div class="card shadow-sm border-light rounded d-flex flex-column">
+                            <!-- Image Section -->
+                            <img src="{{ $article->nhtHinhAnh ? asset('storage/' . $article->nhtHinhAnh) : asset('storage/default-image.jpg') }}" 
+                                class="card-img-top rounded-top" 
+                                alt="{{ $article->nhtTieuDe }}">
 
-                        <div class="card-body d-flex flex-column">
-                            <!-- Title: Make it more prominent -->
-                            <h5 class="card-title mb-3" style="font-size: 1.25rem; font-weight: bold;">{{ $article->nhtTieuDe }}</h5>
-                            
-                            <!-- Description: Limit it and make sure it doesn't overflow -->
-                            <p class="card-text" style="font-size: 0.9rem; color: #555;">{{ Str::limit($article->nhtMoTa, 120) }}</p>
-                            
-                            <!-- Button: Style it to stand out -->
-                            <a href="{{ route('nhtadmin.nhttintuc.nhtDetail', $article->id) }}" class="btn btn-primary btn-sm mt-2">Xem Chi Tiết</a>
+                            <div class="card-body d-flex flex-column">
+                                <!-- Title -->
+                                <h5 class="card-title mb-3" style="font-size: 1.25rem; font-weight: bold;">{{ $article->nhtTieuDe }}</h5>
+                                
+                                <!-- Description -->
+                                <p class="card-text" style="font-size: 0.9rem; color: #555;">{{ Str::limit($article->nhtMoTa, 120) }}</p>
+                                
+                                <!-- Button -->
+                                <a href="{{ route('nhtadmin.nhttintuc.nhtDetail', $article->id) }}" class="btn btn-primary btn-sm mt-2">Xem Chi Tiết</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-            @endforeach
-        </div>
+                @endforeach
+            </div>
 
-        <!-- Back button: Center it with a nice margin -->
+            <!-- Pagination -->
+            <div class="mt-4 d-flex justify-content-center">
+                {{ $nhttintucs->links('pagination::bootstrap-4') }}
+            </div>
+        @endif
+
+        <!-- Back Button -->
         <div class="text-center mt-4">
-            <!-- Nút Quay lại trang trước -->
-            <a href="javascript:history.back()" class="btn btn-outline-secondary mt-3">Quay lại trang trước</a>
+        <a href="javascript:history.back()" class="btn btn-outline-secondary mt-3" style="color: black;">Quay lại trang trước</a>
         </div>
-    </div>
+    </div> 
 @endsection

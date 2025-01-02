@@ -43,15 +43,14 @@
               <i class="fas fa-question-circle"></i> Hỗ Trợ
             </a>
           <a class="mr-4 hover:underline" href="#"><i class="fas fa-globe"></i> Tiếng Việt</a>
-          <a class="mr-4 hover:underline" href="#">Đăng Ký</a>
+          <a class="mr-4 hover:underline" href="nht-user/signup">Đăng Ký</a>
           <a class="hover:underline" href="{{route('nhtuser.login')}}">Đăng Nhập</a>
         </div>
       </div>
       <!-- Main Navigation -->
       <div class="flex items-center py-4">
         <div class="flex items-center">
-          <a href="{{route('nhtuser.home')}}"><img alt=" logo" class="mr-2" height="40" src="/storage/img/san_pham/logoD.jpg" width="40"/></a>
-          <span class="text-2xl font-bold">buycar</span>
+          <a href="{{route('nhtuser.home')}}"><img alt=" logo" class="mr-2" height="40" src="/storage/img/san_pham/logoT.png" width="110"/></a>
         </div>
         <div class="flex-grow mx-4">
           <form action="{{route('nhtuser.search')}}" method="GET" class="flex">

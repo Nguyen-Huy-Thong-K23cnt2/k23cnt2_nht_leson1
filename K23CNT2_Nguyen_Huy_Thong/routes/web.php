@@ -76,6 +76,11 @@ Route::get('/nht-admins/nht-loai-san-pham/nht-delete/{id}',[NHT_LOAI_SAN_PHAMCon
 ->name('nhtadmins.nhtloaisanpham.nhtdelete');
 
 //sản phẩm
+
+// search
+Route::get('/nht-admins/vtd-san-pham/search', [NHT_SAN_PHAMController::class, 'searchAdmins'])->name('nhtuser.searchAdmins');
+// list
+
 Route::get('/nht-admins/nht-san-pham',[NHT_SAN_PHAMController::class,'nhtList'])
 ->name('nhtadims.nhtsanpham');
 //thêm loại sản phẩm

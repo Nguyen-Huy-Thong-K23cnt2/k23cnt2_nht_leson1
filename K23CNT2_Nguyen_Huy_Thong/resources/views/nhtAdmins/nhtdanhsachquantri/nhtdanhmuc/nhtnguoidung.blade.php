@@ -40,8 +40,10 @@
             </tbody>
             
         </table>
-         <!-- Nút Quay lại trang trước -->
-        <a href="javascript:history.back()" class="btn btn-outline-secondary mt-3">Quay lại trang trước</a>
+        <!-- Back Button -->
+        <div class="text-center mt-4">
+        <a href="javascript:history.back()" class="btn btn-outline-secondary mt-3" style="color: black;">Quay lại trang trước</a>
+        </div>
     </div>
   
 @endsection 

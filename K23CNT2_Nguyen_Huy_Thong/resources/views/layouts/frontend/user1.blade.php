@@ -71,13 +71,13 @@
             padding: 20px;
         }
     </style>
-</head>
+</head> 
 
 <body>
 
     <!-- Header Section -->
     <header>
-        @include('layouts.frontend._headerTitle1') <!-- Title for frontend when not logged in -->
+        @include('layouts.frontend._headerTitle') <!-- Title for frontend when not logged in -->
     </header>
     <hr style="border: 2px solid black">
 
@@ -90,7 +90,7 @@
         <div class="wrapper">
             <!-- Content body -->
             <section class="content-body">
-                @yield('content-body') <!-- Dynamic content for pages -->
+                @yield('content-body')<!-- Dynamic content for pages -->
             </section>
         </div>
     </div>

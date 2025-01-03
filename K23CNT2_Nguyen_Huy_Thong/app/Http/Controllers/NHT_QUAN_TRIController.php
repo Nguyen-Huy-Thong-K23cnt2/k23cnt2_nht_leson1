@@ -6,7 +6,7 @@ use App\Models\NHT_QUAN_TRI; // Sử dụng Model
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Session; 
 
 class NHT_QUAN_TRIController extends Controller
 {

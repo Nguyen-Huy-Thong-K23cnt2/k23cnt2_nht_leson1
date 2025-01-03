@@ -60,7 +60,7 @@
       <!-- Main Navigation -->
       <div class="flex items-center py-4">
         <div class="flex items-center">
-          <a href="{{route('nhtuser.home1')}}"><img alt=" logo" class="mr-2" height="40" src="/storage/img/san_pham/logoD.jpg" width="40"/></a>
+          <a href="{{route('nhtuser.home1')}}"><img alt=" logo" class="mr-2" height="40" src="/storage/img/san_pham/logoT.jpg" width="40"/></a>
           <span class="text-2xl font-bold">buycar</span>
         </div>
         <div class="flex-grow mx-4">

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="vi">
 
@@ -77,12 +76,12 @@
 
     <!-- Header Section -->
     <header>
-        @include('_layouts.frontend._headerTitle1') <!-- Title for frontend when not logged in -->
+        @include('layouts.frontend._headerTitle1') <!-- Title for frontend when not logged in -->
     </header>
     <hr style="border: 2px solid black">
 
     <!-- Navbar (Main Navigation Menu) -->
-    @include('_layouts.frontend._menu1') <!-- Menu navigation (with toggle functionality) -->
+    @include('layouts.frontend._menu1') <!-- Menu navigation (with toggle functionality) -->
     <hr style="border: 2px solid black">
 
     <!-- Main Content Section -->
@@ -102,7 +101,7 @@
             <a href="https://twitter.com" class="social-icon"><i class="fab fa-twitter"></i></a>
             <a href="https://www.instagram.com" class="social-icon"><i class="fab fa-instagram"></i></a>
         </div>
-        <p>&copy;Nguyễn Huy Thông K23CNT2</p>
+        <p>&copy; 2025 DINO STORE.</p>
     </footer>
     
 

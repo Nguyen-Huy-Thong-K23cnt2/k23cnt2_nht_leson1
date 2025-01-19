@@ -62,7 +62,7 @@
                             </p>
                         </div>
                         <div class="card-footer">
-                            <a href="{{route('nhtadmins.nhthoadon')}}" class="btn btn-primary"> Back</a>
+                            <a href="{{route('nhtadmins.nhthoadon')}}" class="btn btn-primary"> Quay Lại</a>
                         </div>
                 </div>
             </div>

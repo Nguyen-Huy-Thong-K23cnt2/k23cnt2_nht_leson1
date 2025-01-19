@@ -124,7 +124,7 @@
                         <div class="card-footer">
                             <!-- Change button label to (edit) -->
                             <button class="btn btn-success" type="submit">Sửa</button>
-                            <a href="{{ route('nhtadmins.nhthoadon') }}" class="btn btn-primary">Trở lại</a>
+                            <a href="{{ route('nhtadmins.nhthoadon') }}" class="btn btn-primary">Quay lại</a>
                         </div>
                     </div>
                 </form>
